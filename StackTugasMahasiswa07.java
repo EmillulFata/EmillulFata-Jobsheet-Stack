@@ -67,6 +67,21 @@ public class StackTugasMahasiswa07 {
         return top + 1;
     }
 
+    // Praktikum 2
+    public void konversiDesimalKeBiner(int kode) {
+        StackKonversi07 stackKonv = new StackKonversi07();
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stackKonv.push(sisa);
+            kode = kode / 2;
+        }
+        System.out.print("Nilai Biner: ");
+        while (!stackKonv.isEmpty()) {
+            System.out.print(stackKonv.pop());
+        }
+        System.out.println();
+    }
+
     public void print() {
         if (!isEmpty()) {
             for (int i = top; i >= 0; i--) { // Print dari top ke bawah
