@@ -70,7 +70,7 @@ public class StackTugasMahasiswa07 {
     // Praktikum 2
     public void konversiDesimalKeBiner(int kode) {
         StackKonversi07 stackKonv = new StackKonversi07();
-        while (kode > 0) {
+        while (kode != 0) {
             int sisa = kode % 2;
             stackKonv.push(sisa);
             kode = kode / 2;
