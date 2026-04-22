@@ -56,6 +56,6 @@ public class MahasiswaDemo {
                 default:
                     System.out.println("Pilihan tidak tersedia.");
             }
-        } while (pilih != 5);
+        } while (pilih != 7);
     }
 }
