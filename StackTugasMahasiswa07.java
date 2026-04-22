@@ -54,6 +54,19 @@ public class StackTugasMahasiswa07 {
         }
     }
 
+    public Mahasiswa07 peekBottom() {
+        if (!isEmpty()) {
+            return stack[0]; // Tugas pertama selalu ada di indeks 0
+        } else {
+            System.out.println("Stack kosong!");
+            return null;
+        }
+    }
+
+    public int hitungTugas() {
+        return top + 1;
+    }
+
     public void print() {
         if (!isEmpty()) {
             for (int i = top; i >= 0; i--) { // Print dari top ke bawah

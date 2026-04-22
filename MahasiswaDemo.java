@@ -12,7 +12,9 @@ public class MahasiswaDemo {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
-            System.out.println("5. Keluar");
+            System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Hitung Jumlah Tugas");
+            System.out.println("7. Keluar");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -51,6 +53,15 @@ public class MahasiswaDemo {
                     stack.print();
                     break;
                 case 5:
+                    Mahasiswa07 bawah = stack.peekBottom();
+                    if (bawah != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh: " + bawah.nama);
+                    }
+                    break;
+                case 6:
+                    System.out.println("Jumlah tugas dalam stack saat ini: " + stack.hitungTugas());
+                    break;
+                case 7:
                     System.out.println("Keluar program...");
                     break;
                 default:
